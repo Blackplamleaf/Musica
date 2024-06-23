@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <style>
+        :root {
+            --bg-color-dark: #181818;
+            --bg-color-light: #e0e0e0;
+            --text-color-dark: #fff;
+            --text-color-light: #000;
+            --shadow-dark: 20px 20px 30px #121212, -20px -20px 30px #1e1e1e;
+            --shadow-light: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+            --button-shadow-dark: 10px 10px 15px #121212, -10px -10px 15px #1e1e1e;
+            --button-shadow-light: 5px 5px 10px #bebebe, -5px -5px 10px #ffffff;
+            --icon-color-dark: #fff;
+            --icon-color-light: #000;
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background-color: var(--bg-color-light);
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            transition: background-color 0.3s;
+            position: relative;
+        }
+        .container {
+            text-align: center;
+            background: var(--bg-color-light);
+            padding: 40px;
+            border-radius: 30px;
+            box-shadow: var(--shadow-light);
+            width: 90%;
+            max-width: 400px;
+            transition: background 0.3s, box-shadow 0.3s;
+        }
+        .album-art {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 20px;
+            box-shadow: var(--button-shadow-light);
+            margin-bottom: 20px;
+            transition: box-shadow 0.3s;
+        }
+        .song-info {
+            margin: 20px 0;
+        }
+        .song-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: var(--text-color-light);
+        }
+        .song-artist {
+            font-size: 18px;
+            color: grey;
+        }
+        .audio-controls {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .audio-controls button {
+            background: var(--bg-color-light);
+            border: none;
+            cursor: pointer;
+            padding: 0;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            box-shadow: var(--button-shadow-light);
+            outline: none;
+            transition: background 0.3s, box-shadow 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            -webkit-tap-highlight-color: transparent;
+        }
+        .audio-controls button:active {
+            box-shadow: inset 5px 5px 10px #bebebe, inset -5px -5px 10px #ffffff;
+        }
+        .audio-controls svg {
+            fill: var(--icon-color-light);
+            width: 24px;
+            height: 24px;
+            transition: fill 0.3s;
+        }
+        audio {
+            display: none;
+        }
+        .toggle-theme {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: var(--bg-color-light);
+            border: none;
+            cursor: pointer;
+            padding: 0;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            box-shadow: var(--button-shadow-light);
+            outline: none;
+            transition: background 0.3s, box-shadow 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            -webkit-tap-highlight-color: transparent;
+            z-index: 1000;
+        }
+        .toggle-theme svg {
+            fill: var(--icon-color-light);
+            width: 24px;
+            height: 24px;
+            transition: fill 0.3s;
+        }
+        .dark-mode {
+            --bg-color-light: #181818;
+            --text-color-light: #fff;
+            --shadow-light: 20px 20px 30px #121212, -20px -20px 30px #1e1e1e;
+            --button-shadow-light: 10px 10px 15px #121212, -10px -10px 15px #1e1e1e;
+            --icon-color-light: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://i.ytimg.com/vi/Yw-veN-WB9Y/hq720.jpg?sqp=-oaymwEXCNUGEOADIAQqCwjVARCqCBh4INgESFo&rs=AOn4CLACPQ0I5h13RhZ4LtoO0NqihyOkbA" alt="Album Art" class="album-art">
+        <div class="song-info">
+            <div class="song-title">Aur ho (Rockstar)</div>
+            <div class="song-artist">Mohit Chauhan</div>
+        </div>
+        <audio id="audio" src="https://rr1---sn-gwpa-pmge.googlevideo.com/videoplayback?expire=1719125328&ei=8HB3ZoWyKpyIjMwPnuOXgAU&ip=152.58.159.48&id=o-AO8h4J17K_MfZ7X4E1ZY42IXLzqKzGq5M1fGoT0Jz7ua&itag=139&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&mh=tH&mm=31%2C29&mn=sn-gwpa-pmge%2Csn-gwpa-qxae7&ms=au%2Crdu&mv=m&mvi=1&pl=24&initcwndbps=510000&vprv=1&svpuc=1&mime=audio%2Fmp4&rqh=1&gir=yes&clen=2532059&dur=415.126&lmt=1671711850034425&mt=1719103260&fvip=4&keepalive=yes&c=ANDROID_TESTSUITE&txp=5318224&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cvprv%2Csvpuc%2Cmime%2Crqh%2Cgir%2Cclen%2Cdur%2Clmt&sig=AJfQdSswRQIhALIZfn3P0lv5HEl8aLGB7IGmMbZaidskDso0xCVFTEGMAiAXGuMeyYl9e4-qqIUC0f7CIIhowcF0zC_PSRlCGo7fVw%3D%3D&lsparams=mh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Cinitcwndbps&lsig=AHlkHjAwRQIhAKVyRTQu3cSU63AkI7HfM6W4mg_COSBE-g7Brx0K5SuqAiAbbBfK6ewvcaP4s98UqyQvJuaWe59EZtBchdlWdT3sfw%3D%3D" controls></audio>
+        <div class="audio-controls">
+            <button id="play">
+                <svg id="play-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                <svg id="pause-icon" style="display: none;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+            </button>
+        </div>
+    </div>
+    <button class="toggle-theme" id="theme-toggle">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2.25c-5.376 0-9.75 4.374-9.75 9.75s4.374 9.75 9.75 9.75 9.75-4.374 9.75-9.75-4.374-9.75-9.75-9.75zm0 17.25c-4.142 0-7.5-3.358-7.5-7.5s3.358-7.5 7.5-7.5 7.5 3.358 7.5 7.5-3.358 7.5-7.5 7.5z"/></svg>
+    </button>
+
+    <script>
+        const audio = document.getElementById('audio');
+        const playButton = document.getElementById('play');
+        const playIcon = document.getElementById('play-icon');
+        const pauseIcon = document.getElementById('pause-icon');
+        const themeToggle = document.getElementById('theme-toggle');
+        const body = document.body;
+
+        playButton.addEventListener('click', () => {
+            if (audio.paused) {
+                audio.play();
+                playIcon.style.display = 'none';
+                pauseIcon.style.display = 'inline';
+            } else {
+                audio.pause();
+                playIcon.style.display = 'inline';
+                pauseIcon.style.display = 'none';
+            }
+        });
+
+        themeToggle.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+        });
+
+        
+    </script>
+</body>
+  </html>
