@@ -133,17 +133,6 @@
     </style>
 </head>
 <body>
-<!-- Popup container -->
-    <div id="popup" class="popup">
-        <p>Use 🎧 for better experience!!</p>
-    </div>
-
-    <!-- Your existing container and content -->
-    <div class="container">
-        <!-- Rest of your content -->
-    </div>
-
-    <!-- Your existing script -->
     
     <div class="container">
         <img src="https://i.ytimg.com/vi/Yw-veN-WB9Y/hq720.jpg?sqp=-oaymwEXCNUGEOADIAQqCwjVARCqCBh4INgESFo&rs=AOn4CLACPQ0I5h13RhZ4LtoO0NqihyOkbA" alt="Album Art" class="album-art">
@@ -170,19 +159,7 @@
         const pauseIcon = document.getElementById('pause-icon');
         const themeToggle = document.getElementById('theme-toggle');
         const body = document.body;
-        const popup = document.getElementById('popup');
-
-        // Show the popup when the page is loaded
-        window.onload = function() {
-            popup.style.display = 'block';
-        };
-
-        // Hide the popup when user clicks anywhere on the screen
-        window.onclick = function(event) {
-            if (event.target == popup) {
-                popup.style.display = 'none';
-            }
-        };
+        
 
         playButton.addEventListener('click', () => {
             if (audio.paused) {
