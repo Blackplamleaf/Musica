@@ -1,0 +1,18 @@
+{
+  "songs": [
+    {
+      "id": 1,
+      "name": "Aur ho (Rockstar)",
+      "artist": "Mohit Chauhan",
+      "songUrl": "https://rr1---sn-gwpa-pmge.googlevideo.com/videoplayback?expire=1719125328&ei=8HB3ZoWyKpyIjMwPnuOXgAU&ip=152.58.159.48&id=o-AO8h4J17K_MfZ7X4E1ZY42IXLzqKzGq5M1fGoT0Jz7ua&itag=139&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&mh=tH&mm=31%2C29&mn=sn-gwpa-pmge%2Csn-gwpa-qxae7&ms=au%2Crdu&mv=m&mvi=1&pl=24&initcwndbps=510000&vprv=1&svpuc=1&mime=audio%2Fmp4&rqh=1&gir=yes&clen=2532059&dur=415.126&lmt=1671711850034425&mt=1719103260&fvip=4&keepalive=yes&c=ANDROID_TESTSUITE&txp=5318224&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cvprv%2Csvpuc%2Cmime%2Crqh%2Cgir%2Cclen%2Cdur%2Clmt&sig=AJfQdSswRQIhALIZfn3P0lv5HEl8aLGB7IGmMbZaidskDso0xCVFTEGMAiAXGuMeyYl9e4-qqIUC0f7CIIhowcF0zC_PSRlCGo7fVw%3D%3D&lsparams=mh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Cinitcwndbps&lsig=AHlkHjAwRQIhAKVyRTQu3cSU63AkI7HfM6W4mg_COSBE-g7Brx0K5SuqAiAbbBfK6ewvcaP4s98UqyQvJuaWe59EZtBchdlWdT3sfw%3D%3D",
+      "imgUrl": "https://i.ytimg.com/vi/Yw-veN-WB9Y/hq720.jpg?sqp=-oaymwEXCNUGEOADIAQqCwjVARCqCBh4INgESFo&rs=AOn4CLACPQ0I5h13RhZ4LtoO0NqihyOkbA"
+    },
+    {
+      "id": 2,
+      "name": "Mere Naseeb Mein",
+      "artist": "Pamela Jain & Precha",
+      "songUrl": "https://rr6---sn-gwpa-25us.googlevideo.com/videoplayback?expire=1719139077&ei=paZ3ZoqyEMO6z7sPvMeFuAY&ip=152.58.186.114&id=o-AFfIiQXCmOP4pPwvD3z_N_Am0zQOfx-HYsFzj7hOj8Cg&itag=139&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&mh=Lf&mm=31%2C29&mn=sn-gwpa-25us%2Csn-gwpa-qxad&ms=au%2Crdu&mv=m&mvi=6&pcm2cms=yes&pl=24&initcwndbps=338750&vprv=1&svpuc=1&mime=audio%2Fmp4&rqh=1&gir=yes&clen=983121&dur=161.100&lmt=1706158556212056&mt=1719116927&fvip=6&keepalive=yes&c=ANDROID_TESTSUITE&txp=4532434&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cvprv%2Csvpuc%2Cmime%2Crqh%2Cgir%2Cclen%2Cdur%2Clmt&sig=AJfQdSswRQIhAND9_pHLorDlXDHKrHjKyXfaog3veQdf3N1upvhO9_ZTAiANDTg9sPC9tyasrOc73vI_Br37CetrlYeTKCZimni_Mg%3D%3D&lsparams=mh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpcm2cms%2Cpl%2Cinitcwndbps&lsig=AHlkHjAwRAIgJx2yW9nutHrA4Xio8q5_VlsHLFRxbsKxLWoqMGk3Qy4CIDnor2rlj94Wfg8uatQFqZLpB95KgNd7QHRRGpOlVP60",
+      "imgUrl": "https://img.youtube.com/vi/LaAdeVWJ_hk/maxresdefault.jpg"
+    }
+  ]
+}
