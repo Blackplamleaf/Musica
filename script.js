@@ -10,6 +10,8 @@
     const songTitle = document.getElementById('song-title');
     const songArtist = document.getElementById('song-artist');
 
+    body.classList.add('dark-mode');
+
     let songsData = [];
 
     function updateMediaSession(song) {
@@ -62,7 +64,7 @@
     });
 
     themeToggle.addEventListener('click', () => {
-        body.classList.toggle('light-mode');
+        body.classList.toggle('dark-mode');
     });
 
     function playRandomSong() {
