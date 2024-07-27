@@ -1,0 +1,148 @@
+:root {
+            --bg-color-dark: #181818;
+            --bg-color-light: #e0e0e0;
+            --text-color-dark: #fff;
+            --text-color-light: #000;
+            --shadow-dark: 20px 20px 30px #121212, -20px -20px 30px #1e1e1e;
+            --shadow-light: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+            --button-shadow-dark: 10px 10px 15px #121212, -10px -10px 15px #1e1e1e;
+            --button-shadow-light: 5px 5px 10px #bebebe, -5px -5px 10px #ffffff;
+            --icon-color-dark: #fff;
+            --icon-color-light: #000;
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100svh;
+            background-color: var(--bg-color-light);
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            transition: background-color 0.3s;
+            position: relative;
+        }
+        .container {
+            text-align: center;
+            background: var(--bg-color-light);
+            padding: 40px;
+            border-radius: 30px;
+            box-shadow: var(--shadow-light);
+            width: 90%;
+            max-width: 400px;
+            transition: background 0.3s, box-shadow 0.3s;
+        }
+        .album-art {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 20px;
+            box-shadow: var(--button-shadow-light);
+            margin-bottom: 20px;
+            transition: box-shadow 0.3s;
+        }
+        .song-info {
+            margin: 20px 0;
+        }
+        .song-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: var(--text-color-light);
+        }
+        .song-artist {
+            font-size: 18px;
+            color: grey;
+        }
+        .audio-controls {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .audio-controls button {
+            background: var(--bg-color-light);
+            border: none;
+            cursor: pointer;
+            padding: 0;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            box-shadow: var(--button-shadow-light);
+            outline: none;
+            transition: background 0.3s, box-shadow 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            -webkit-tap-highlight-color: transparent;
+        }
+        .audio-controls button:active {
+            box-shadow: inset 5px 5px 10px #bebebe, inset -5px -5px 10px #ffffff;
+        }
+        .audio-controls svg {
+            fill: var(--icon-color-light);
+            width: 24px;
+            height: 24px;
+            transition: fill 0.3s;
+        }
+        audio {
+            display: none;
+        }
+        .toggle-theme {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: var(--bg-color-light);
+            border: none;
+            cursor: pointer;
+            padding: 0;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            box-shadow: var(--button-shadow-light);
+            outline: none;
+            transition: background 0.3s, box-shadow 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            -webkit-tap-highlight-color: transparent;
+            z-index: 1000;
+        }
+        .toggle-theme svg {
+            fill: var(--icon-color-light);
+            width: 24px;
+            height: 24px;
+            transition: fill 0.3s;
+        }
+        .dark-mode {
+            --bg-color-light: #181818;
+            --text-color-light: #fff;
+            --shadow-light: 20px 20px 30px #121212, -20px -20px 30px #1e1e1e;
+            --button-shadow-light: 10px 10px 15px #121212, -10px -10px 15px #1e1e1e;
+            --icon-color-light: #fff;
+        }
+        .shuffle-button {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            background: var(--bg-color-light);
+            border: none;
+            cursor: pointer;
+            padding: 0;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            box-shadow: var(--button-shadow-light);
+            outline: none;
+            transition: background 0.3s, box-shadow 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            -webkit-tap-highlight-color: transparent;
+            z-index: 1000;
+        }
+        .shuffle-button svg {
+            fill: var(--icon-color-light);
+            width: 24px;
+            height: 24px;
+            transition: fill 0.3s;
+}
