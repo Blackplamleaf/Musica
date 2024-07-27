@@ -195,7 +195,7 @@
             .then(response => response.json())
             .then(data => {
                 songsData = data.songs;
-                updatePlayer(songsData[0]);
+                updatePlayer(songsData[5]);
             })
             .catch(error => console.error('Error loading songs:', error));
 
