@@ -167,7 +167,7 @@
         fetch('songs.json')
             .then(response => response.json())
             .then(data => {
-                const firstSong = data.songs.find(song => song.id === 1);
+                const firstSong = data.songs.find(song => song.id === 6);
                 if (firstSong) {
                     audio.src = firstSong.audioSrc;
                     albumArt.src = firstSong.albumArt;
