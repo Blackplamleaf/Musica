@@ -62,7 +62,7 @@
     });
 
     themeToggle.addEventListener('click', () => {
-        body.classList.toggle('dark-mode');
+        body.classList.toggle('light-mode');
     });
 
     function playRandomSong() {
